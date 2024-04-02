@@ -1,6 +1,6 @@
 {
     "landingPage": {
-        "title": "Credmudra – Get Instant Personal Loan Onilne ",
+        "title": "vercel-landing-page ",
         "description": "At Credmudra, we work to match you with lenders that align with your needs. Get Instant approval, easy application, minimal documentation and no hidden charges. Apply now!",
         "keywords":"Home",
         "canonical":"https://www.credmudra.com"
@@ -8,14 +8,14 @@
     },
 
     "businessPage": {
-        "title": "Apply for Instant Business Loan Online in India",
+        "title": "vercel-businessPage",
         "description": "Apply for Business Loan online at lowered interest rates with minimum documentation from Credmudra. Get Instant approval, easy application and no hidden charges. Apply now!",
         "keywords":"We Provide Funds For All Your Business Needs",
         "canonical":"https://www.credmudra.com/business-loan"
     },
 
     "personalLoan": {
-        "title": "Apply for Instant Personal Loan Online | Up to Rs 10 Lakh",
+        "title": "vercel-personalPage",
         "description": "Apply for instant personal loans online up to Rs.10 lakh with CredMudra. Get matched with a lender, and complete quick formalities for hassle-free disbursal.",
         "keywords":"Personal Loans",
         "canonical":"https://www.credmudra.com/personal-loan"
