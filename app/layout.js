@@ -4,6 +4,7 @@ import { Partytown } from '@builder.io/partytown/react';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+
 export const viewport = {
   themeColor: "black",
 };
@@ -24,6 +25,7 @@ export const metadata = {
   manifest: "/manifest.json",
 };
 export default function RootLayout({ children }) {
+ 
   return (
     <html lang="en">
       <body>
