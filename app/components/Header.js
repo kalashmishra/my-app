@@ -11,7 +11,7 @@ import React from "react";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
 import Image from "next/image";
-import crednudraLogo from "../../public/assets/images/credmudra_logo_new.webp";
+import credmudraLogo from "../../public/assets/images/credmudra_logo_new.webp";
 const Header = () => {
   return (
     <>
@@ -35,7 +35,7 @@ const Header = () => {
                 <Image
                   blurDataURL="data:..."
                   placeholder="blur" 
-                  src={crednudraLogo}
+                  src={credmudraLogo}
                   alt="CredMudra Logo"
                 /></Link>
                 <Stack
