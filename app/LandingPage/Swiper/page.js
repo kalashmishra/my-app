@@ -1,11 +1,19 @@
 import React, { useEffect } from "react";
 import Swiper from "swiper";
-// import "../../../node_modules/swiper/css/swiper.css";
-import "../../../node_modules/swiper/"
+import "../../../node_modules/swiper/swiper.css";
+
 import "../swiper.css";
+import "../slider.css"
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import layer1 from "../../../public/assets/images/Layer_x0020_1.svg"
+import tablet from "../../../public/assets/images/tablet.svg"
+import tick from "../../../public/assets/images/tick.svg"
+import _x33_ from "../../../public/assets/images/_x33_.svg"
+import dollar from "../../../public/assets/images/dollar.svg"
+import worldwideShipping from "../../../public/assets/images/worldwide-shipping.svg"
+import transparency from "../../../public/assets/images/transparency.svg"
+import protection from "../../../public/assets/images/protection.svg"
 import {
   Box,
   Card,
@@ -14,7 +22,7 @@ import {
   Container,
   Typography,
 } from "@mui/material";
-
+import Image  from 'next/image'
 const swiperData = [
   {
     title: "90%+ Disbursal Rate",
@@ -26,43 +34,43 @@ const swiperData = [
     title: "100% Paperless",
     description:
       "Apply for Link loan sitting in the comfort of your home, as we are 100% digital.",
-    image: process.env.PUBLIC_URL + "/assets/images/tablet.svg",
+    image: tablet,
   },
   {
     title: "Prequalified Offers",
     description:
       "Check offer rates without having to worry about the impact on your credit score.",
-    image: process.env.PUBLIC_URL + "/assets/images/tick.svg",
+    image: tick,
   },
   {
     title: "Tailor Your Loan",
     description:
       "Customise your loan amount from INR 1000 to INR 1,00,000 within the tenure of 3 months to 2 years.",
-    image: process.env.PUBLIC_URL + "/assets/images/_x33_.svg",
+    image: _x33_,
   },
   {
     title: "Instant Approval",
     description:
       "Online approval within 48 hours with less documentation to those needing the loan urgently.",
-    image: process.env.PUBLIC_URL + "/assets/images/dollar.svg",
+    image: dollar,
   },
   {
     title: "No geographical limitations*",
     description:
       "The platform is also accessible in many remote and underserved areas with an internet connection.",
-    image: process.env.PUBLIC_URL + "/assets/images/worldwide-shipping.svg",
+    image: worldwideShipping,
   },
   {
     title: "No Hidden Charges",
     description:
       "Our process is transparent and fair, as there are no hidden charges that may surprise you.",
-    image: process.env.PUBLIC_URL + "/assets/images/transparency.svg",
+    image: transparency,
   },
   {
     title: "Safe and Secure",
     description:
       "We follow all the necessary security protocols, and data privacy standards to make sure that your information is safe and secure.",
-    image: process.env.PUBLIC_URL + "/assets/images/protection.svg",
+    image: protection,
   },
 ];
 
@@ -111,10 +119,13 @@ const SwiperComponent = () => {
                   }}
                 >
                   <Box sx={{ height: "40%", paddingTop: "30px" }}>
-                    <CardMedia
-                      sx={{ height: "38px", width: "38px" }}
-                      image={data.image}
-                    />
+                  <Image
+          src={data.image}
+          alt="Image description"
+          width={38}
+          height={38}
+        />
+      
                   </Box>
                   <CardContent sx={{ padding: 0, height: "60%" }}>
                     <Typography

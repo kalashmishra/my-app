@@ -26,7 +26,7 @@ const WhyMillions = () => {
             Why Millions Of Indians Trust Credmudra For Short Term Loans?
           </Typography>
         </Box>
-        {/* <SwiperComponent /> */}
+        <SwiperComponent />
       </Box>
     </Box>
   );

@@ -1,46 +1,45 @@
 import React, { useEffect } from "react";
 import Swiper from "swiper";
-
+import Image from "next/image";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { Box, Card, CardMedia, Container, Typography } from "@mui/material";
-
+import cred_client_1 from "../../../public/assets/images/cred_client_1.png";
+import cred_client_2 from "../../../public/assets/images/cred_client_2.png";
+import cred_client_3 from "../../../public/assets/images/cred_client_3.png";
+import cred_client_4 from "../../../public/assets/images/cred_client_4.png";
+import cred_client_5 from "../../../public/assets/images/cred_client_5.png";
+import cred_client_6 from "../../../public/assets/images/cred_client_6.png";
+import cred_client_7 from "../../../public/assets/images/cred_client_7.png";
+import cred_client_8 from "../../../public/assets/images/cred_client_8.png";
+import cred_client_9 from "../../../public/assets/images/cred_client_9.png";
 const swiperData = [
   {
-    image: process.env.PUBLIC_URL +
-    "/assets/images/cred_client_1.png",
+    image: cred_client_1,
   },
   {
-    image:  process.env.PUBLIC_URL +
-    "/assets/images/cred_client_2.png",
+    image: cred_client_2,
   },
   {
-    image:  process.env.PUBLIC_URL +
-    "/assets/images/cred_client_3.png",
+    image: cred_client_3,
   },
   {
-    image:  process.env.PUBLIC_URL +
-    "/assets/images/cred_client_4.png",
+    image: cred_client_4,
   },
   {
-    image:  process.env.PUBLIC_URL +
-    "/assets/images/cred_client_5.png",
+    image: cred_client_5,
   },
   {
-    image:  process.env.PUBLIC_URL +
-    "/assets/images/cred_client_6.png",
+    image: cred_client_6,
   },
   {
-    image:  process.env.PUBLIC_URL +
-    "/assets/images/cred_client_7.png",
+    image: cred_client_7,
   },
   {
-    image:  process.env.PUBLIC_URL +
-    "/assets/images/cred_client_8.png",
+    image: cred_client_8,
   },
   {
-    image:  process.env.PUBLIC_URL +
-    "/assets/images/cred_client_9.png",
+    image: cred_client_9,
   },
 ];
 
@@ -73,7 +72,7 @@ const LandingPartners = () => {
       sx={{
         overflow: "hidden",
         backgroundColor: "#243771",
-        marginTop: {xs:'20%',sm:'5%'},
+        marginTop: { xs: "20%", sm: "5%" },
         padding: "40px 0",
       }}
     >
@@ -89,7 +88,7 @@ const LandingPartners = () => {
                 lg: "30px",
                 xl: "32px",
               },
-              fontWeight: "900",        
+              fontWeight: "900",
               marginBottom: "30px",
             }}
           >
@@ -102,6 +101,7 @@ const LandingPartners = () => {
             sx={{ display: "flex", flexDirection: "row" }}
           >
             {swiperData.map((data, index) => (
+          
               <Box className="swiper-slide" key={`slide${index}`}>
                 <Card
                   sx={{
@@ -110,12 +110,12 @@ const LandingPartners = () => {
                     borderRadius: "10px",
                   }}
                 >
-                  <CardMedia
-                    component="img"
-                    sx={{ width: "100%", height: "auto", objectFit: "cover" }}
+                  <Image
+                  
+                   style={{ width: "100%", height: "auto", objectFit:'cover' }}
                     src={data.image}
-                    alt={`Slide ${index}`}
-                  />
+                    alt="Image description"
+                    />
                 </Card>
               </Box>
             ))}

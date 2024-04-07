@@ -2,8 +2,8 @@ import GetMatchedButton from "@/app/lib/GetMatchedButton/page";
 import { Box, Container, Grid, Hidden, Typography } from "@mui/material";
 import Link from "next/link";
 import React from "react";
-
-
+import girlpath from "../../../public/assets/images/girl-path.webp"
+import Image from "next/image"
 const ResponsibleCredit = ({scrollToTop}) => {
   return (
     <Box sx={{ marginTop: { xs: "15%", md: "0" } }}>
@@ -95,9 +95,9 @@ const ResponsibleCredit = ({scrollToTop}) => {
                 paddingTop: { xs: "15%", sm: "5%", md: "0" },
               }}
             >
-              <img
+              <Image
                 style={{ width: "100%", height: "auto" }}
-                src={process.env.PUBLIC_URL + "/assets/images/girl-path.webp"}
+                src={girlpath}
                 alt="match you with the right financial products."
               />
             </Box>

@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
-
-// import "../../../node_modules/swiper/css/swiper.css";
+import "swiper/css";
+// import "../../../node_modules/swiper/swiper.css";
 import "./slider.css";
-import "../../node_modules/swiper/"
+import "./swiper.css"
+// import "../../node_modules/swiper/swiper.css"
 // import { useDispatch } from "react-redux";
 // import { setLoanType } from "../../redux/actions";
 
