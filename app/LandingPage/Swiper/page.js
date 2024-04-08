@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import swiper from "swiper";
+import Swiper from "swiper";
 import "../../../node_modules/swiper/swiper.css";
 import "../swiper.css";
 import "../slider.css";
@@ -24,7 +24,7 @@ import {
   Typography,
 } from "@mui/material";
 import Image from "next/image";
-import swiper from "swiper";
+
 const swiperData = [
   {
     title: "90%+ Disbursal Rate",
@@ -78,7 +78,7 @@ const swiperData = [
 
 const SwiperComponent = () => {
   useEffect(() => {
-    new swiper(".swiper", {
+    new Swiper(".swiper", {
       direction: "horizontal",
 
       breakpoints: {
