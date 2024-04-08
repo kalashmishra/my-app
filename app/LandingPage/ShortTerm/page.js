@@ -5,31 +5,34 @@ import Hidden from "@mui/material/Hidden";
 import Link from "next/link";
 import Image from "next/image";
 import homebanner from "../../../public/assets/images/home-banner.webp";
-
+import personalLoan from "../../../public/assets/images/personal-loan.svg";
+import businessLoan from "../../../public/assets/images/business-loan.svg";
+import debtConsolidation from "../../../public/assets/images/debt-consolidation.svg";
+import health from "../../../public/assets/images/health.svg";
 const ShortTerm = ({ scrollToTop }) => {
-  // const linkData = [
-  //   {
-  //     href: "/personal-loan",
-  //     imageSrc:  "/assets/images/personal-loan.svg",
-  //     label: "Personal Loan",
-  //   },
-  //   {
-  //     href: "/business-loan",
-  //     imageSrc:   "/assets/images/business-loan.svg",
-  //     label: "Business Loan",
-  //   },
-  //   {
-  //     href: "/debt-consolidation",
-  //     imageSrc:
-  //      "/assets/images/debt-consolidation.svg",
-  //     label: "Debt Consolidation",
-  //   },
-  //   {
-  //     href: "/personal-loan-for-medical-emergency",
-  //     imageSrc:  "public/assets/images/health.svg",
-  //     label: "Medical",
-  //   },
-  // ];
+  const linkData = [
+    {
+      href: "/personal-loan",
+      imageSrc:  personalLoan,
+      label: "Personal Loan",
+    },
+    {
+      href: "/business-loan",
+      imageSrc:   businessLoan,
+      label: "Business Loan",
+    },
+    {
+      href: "/debt-consolidation",
+      imageSrc:
+      debtConsolidation ,
+      label: "Debt Consolidation",
+    },
+    {
+      href: "/personal-loan-for-medical-emergency",
+      imageSrc: health,
+      label: "Medical",
+    },
+  ];
   return (
     <Box sx={{ position: "relative" }}>
       <Container maxWidth={"xl"} sx={{ padding: { md: "0 7%" } }}>
@@ -96,7 +99,7 @@ const ShortTerm = ({ scrollToTop }) => {
                   On a mission of financial inclusion for every indian
                 </Typography>
               </Box>
-              {/* <Box
+              <Box
                   sx={{
                     display: "flex",
                     marginBottom: "20px",
@@ -150,7 +153,7 @@ const ShortTerm = ({ scrollToTop }) => {
                               },
                             }}
                           >
-                            <img
+                            <Image
                               alt={`get ${link.label}`}
                               style={{ maxWidth: "100%", height: "auto" }}
                               src={link.imageSrc}
@@ -172,7 +175,7 @@ const ShortTerm = ({ scrollToTop }) => {
                       </Link>
                     </Box>
                   ))}
-                </Box> */}
+                </Box>
               <Box
                 sx={{
                   display: "flex",
