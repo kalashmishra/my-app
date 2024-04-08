@@ -1,4 +1,6 @@
-
+.swiper{
+  overflow: visible;
+}
   .swiper-scrollbar-drag {
     background-color: #F6D549; 
   }

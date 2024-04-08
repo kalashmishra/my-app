@@ -1,9 +1,16 @@
+"use client"
 import React, { useEffect } from "react";
 import Swiper from "swiper";
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import "../../../node_modules/swiper/swiper.css";
 
-import "../swiper.css";
-import "../slider.css"
+import "../swiper.css"
+ import "../slider.css"
+
+
+
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import layer1 from "../../../public/assets/images/Layer_x0020_1.svg"
@@ -95,17 +102,18 @@ const SwiperComponent = () => {
       scrollbar: {
         el: ".swiper-scrollbar",
         draggable: true,
+        
       },
     });
   });
 
   return (
-    <Box sx={{ overflow: "hidden" }}>
-      <Container sx={{ width: "100%", overflow: "visible" }}>
+    <Box sx={{ overflow: "hidden", backgroundColor:'red'}}>
+      <Container sx={{ width: "100%", overflowX: "visible" }}>
         <Box className="swiper">
           <Box
             className="swiper-wrapper"
-            sx={{ display: "flex", flexDirection: "row" }}
+            sx={{ display: "flex", flexDirection: "row", }}
           >
             {swiperData.map((data, index) => (
               <Box className="swiper-slide" key={`slide${index}`}>
