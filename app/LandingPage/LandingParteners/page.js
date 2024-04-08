@@ -129,13 +129,13 @@ const LandingPartners = () => {
             }}
           >
             <Box
-              className="swiper-scrollbar"
+              className="swiper-scrollbar "
               sx={{
                 position: "initial",
                 margin: "10px 0",
                 width: "-webkit-fill-available",
                 height: "7px",
-                background: "#5166a7",
+                backgroundColor: "#5166a7",
               }}
             ></Box>
             <Box sx={{ display: "flex" }}>
