@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import {
   Container,
@@ -34,8 +35,8 @@ const CustomTextField = styled(TextField)({
 });
 
 const AvoidPitfalls = () => {
-  const [displayThanks, setDisplayThanks] = useState(false);
-  const [LoadingButton, setLoadingButton] = useState(false);
+  // const [displayThanks, setDisplayThanks] = useState(false);
+  // const [LoadingButton, setLoadingButton] = useState(false);
 
 //   const handleSubmit = async (e) => {
 //     setLoadingButton(true);
