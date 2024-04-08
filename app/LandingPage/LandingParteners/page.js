@@ -104,11 +104,12 @@ const LandingPartners = () => {
             {swiperData.map((data, index) => (
           
               <Box className="swiper-slide" key={`slide${index}`}>
-                <Card
+                <Box
                   sx={{
                     width: "300px",
                     marginRight: "25px",
                     borderRadius: "10px",
+                  
                   }}
                 >
                   <Image
@@ -117,7 +118,7 @@ const LandingPartners = () => {
                     src={data.image}
                     alt="Image description"
                     />
-                </Card>
+                </Box>
               </Box>
             ))}
           </Box>
