@@ -28,11 +28,12 @@ const LandingPage = () => {
     <>
      
       <ShortTerm scrollToTop={scrollToTop} />
-      {/* <WhyMillions />
+      <WhyMillions />
       <ResponsibleCredit scrollToTop={scrollToTop} />
       <LandingPartners />
       <LatestBlog />
-      <AvoidPitfalls /> */}
+      
+      <AvoidPitfalls />
       
     </>
   );
