@@ -1,9 +1,7 @@
 "use client"
 import React, { useEffect } from "react";
-import Swiper from "swiper";
-import { Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+
+import swiper from "swiper";
 import "../../../node_modules/swiper/swiper.css";
 
 import "../swiper.css"
@@ -30,6 +28,7 @@ import {
   Typography,
 } from "@mui/material";
 import Image  from 'next/image'
+import swiper from "swiper";
 const swiperData = [
   {
     title: "90%+ Disbursal Rate",
@@ -83,7 +82,7 @@ const swiperData = [
 
 const SwiperComponent = () => {
   useEffect(() => {
-    new Swiper(".swiper", {
+    new swiper(".swiper", {
       direction: "horizontal",
 
       breakpoints: {
