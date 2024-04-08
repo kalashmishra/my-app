@@ -1,24 +1,20 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
-
 import swiper from "swiper";
 import "../../../node_modules/swiper/swiper.css";
-
-import "../swiper.css"
- import "../slider.css"
-
-
+import "../swiper.css";
+import "../slider.css";
 
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import layer1 from "../../../public/assets/images/Layer_x0020_1.svg"
-import tablet from "../../../public/assets/images/tablet.svg"
-import tick from "../../../public/assets/images/tick.svg"
-import _x33_ from "../../../public/assets/images/_x33_.svg"
-import dollar from "../../../public/assets/images/dollar.svg"
-import worldwideShipping from "../../../public/assets/images/worldwide-shipping.svg"
-import transparency from "../../../public/assets/images/transparency.svg"
-import protection from "../../../public/assets/images/protection.svg"
+import layer1 from "../../../public/assets/images/Layer_x0020_1.svg";
+import tablet from "../../../public/assets/images/tablet.svg";
+import tick from "../../../public/assets/images/tick.svg";
+import _x33_ from "../../../public/assets/images/_x33_.svg";
+import dollar from "../../../public/assets/images/dollar.svg";
+import worldwideShipping from "../../../public/assets/images/worldwide-shipping.svg";
+import transparency from "../../../public/assets/images/transparency.svg";
+import protection from "../../../public/assets/images/protection.svg";
 import {
   Box,
   Card,
@@ -27,14 +23,14 @@ import {
   Container,
   Typography,
 } from "@mui/material";
-import Image  from 'next/image'
+import Image from "next/image";
 import swiper from "swiper";
 const swiperData = [
   {
     title: "90%+ Disbursal Rate",
     description:
       "We work to match you with lenders that align with your needs, increasing your chances of loan approval.",
-    image:layer1,
+    image: layer1,
   },
   {
     title: "100% Paperless",
@@ -101,18 +97,17 @@ const SwiperComponent = () => {
       scrollbar: {
         el: ".swiper-scrollbar",
         draggable: true,
-        
       },
     });
   });
 
   return (
-    <Box sx={{ overflow: "hidden", backgroundColor:'red'}}>
+    <Box sx={{ overflow: "hidden", backgroundColor: "red" }}>
       <Container sx={{ width: "100%", overflowX: "visible" }}>
         <Box className="swiper">
           <Box
             className="swiper-wrapper"
-            sx={{ display: "flex", flexDirection: "row", }}
+            sx={{ display: "flex", flexDirection: "row" }}
           >
             {swiperData.map((data, index) => (
               <Box className="swiper-slide" key={`slide${index}`}>
@@ -126,13 +121,12 @@ const SwiperComponent = () => {
                   }}
                 >
                   <Box sx={{ height: "40%", paddingTop: "30px" }}>
-                  <Image
-          src={data.image}
-          alt="Image description"
-          width={38}
-          height={38}
-        />
-      
+                    <Image
+                      src={data.image}
+                      alt="Image description"
+                      width={38}
+                      height={38}
+                    />
                   </Box>
                   <CardContent sx={{ padding: 0, height: "60%" }}>
                     <Typography
