@@ -13,7 +13,9 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import best_deal from "../../../../public/assets/images/best_deal.webp"
 import Image from "next/image";
-const TipsToGrab = ({  GetMatchedButton, Link }) => {
+import Link from "next/link";
+import GetMatchedButton from "@/app/components/GetMatchedButton";
+const TipsToGrab = () => {
   const [expanded, setExpanded] = React.useState("panel1");
 
   const handleChange = (panel) => (event, newExpanded) => {

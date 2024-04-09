@@ -16,8 +16,7 @@ import HowWillLenders from "./@HowWillLenders/page";
 import TipsToGrab from "./@TipsToGrab/page";
 import FAQS from "./@FAQS/page";
 import TransformYourFinancial from "./@TransformYourFinancial/page";
-import Link from "next/link";
-import GetMatchedButton from "@/app/components/GetMatchedButton";
+
 
 
 const PersonalLoan = () => {
@@ -35,19 +34,19 @@ const PersonalLoan = () => {
    
       <PlHomePage />
       <PlDescriptionPage />
-      <GetPersonalLoan   GetMatchedButton={GetMatchedButton} Link={Link} />
+      <GetPersonalLoan   />
       <InterestRate />
-      <ChoosePersonalLoan   GetMatchedButton={GetMatchedButton} Link={Link}/>
-      <WhyIsPlBetter  GetMatchedButton={GetMatchedButton} Link={Link}/>
+      <ChoosePersonalLoan   />
+      <WhyIsPlBetter />
       <SimpleCriteria />
-      <DocumentsYouNeed  GetMatchedButton={GetMatchedButton} Link={Link}/>
-      <PersonalLoanFees  GetMatchedButton={GetMatchedButton} Link={Link}/>
+      <DocumentsYouNeed/>
+      <PersonalLoanFees />
       <StepByStep />
-      <WhenShouldYouAvoid  GetMatchedButton={GetMatchedButton} Link={Link}/>
-      <WhenShouldYouTake  GetMatchedButton={GetMatchedButton} Link={Link}/>
-      <TipsToAvoidPl  GetMatchedButton={GetMatchedButton} Link={Link}/>
+      <WhenShouldYouAvoid />
+      <WhenShouldYouTake />
+      <TipsToAvoidPl />
       <HowWillLenders />
-      <TipsToGrab  GetMatchedButton={GetMatchedButton} Link={Link}/>
+      <TipsToGrab />
       <FAQS />
       <TransformYourFinancial />
     </>

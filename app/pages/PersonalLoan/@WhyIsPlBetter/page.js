@@ -14,7 +14,9 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import get_a_loan from "../../../../public/assets/images/get-a-loan.webp"
 import Image from "next/image";
-const WhyIsPlBetter = ({  GetMatchedButton, Link }) => {
+import Link from "next/link";
+import GetMatchedButton from "@/app/components/GetMatchedButton";
+const WhyIsPlBetter = () => {
   const [expanded, setExpanded] = React.useState("panel1");
 
   const handleChange = (panel) => (event, newExpanded) => {

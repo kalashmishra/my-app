@@ -1,7 +1,9 @@
+import GetMatchedButton from "@/app/components/GetMatchedButton";
 import { Box, Container, Typography } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 
-const GetPersonalLoan = ({  GetMatchedButton, Link }) => {
+const GetPersonalLoan = () => {
   return (
     <Box
       sx={{

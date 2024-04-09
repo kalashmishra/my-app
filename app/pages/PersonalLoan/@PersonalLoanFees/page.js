@@ -8,8 +8,10 @@ import {
   ListItem,
   Typography,
 } from "@mui/material";
+import Link from "next/link";
+import GetMatchedButton from "@/app/components/GetMatchedButton";
 
-const PersonalLoanFees = ({  GetMatchedButton, Link }) => {
+const PersonalLoanFees = () => {
   const CircleIcon = {
     color: "#F7D64A",
     fontSize: "15px",

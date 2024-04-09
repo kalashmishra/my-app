@@ -1,21 +1,20 @@
-"use client";
+
 import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
+  
   Box,
   Container,
   Grid,
   Typography,
 } from "@mui/material";
 import * as React from "react";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+
 import Image from "next/image";
 import discover_smarter from "../../../../public/assets/images/discover-smarter.webp";
 import { AccordionItem } from "@/app/components/AccordianItem";
+import GetMatchedButton from "@/app/components/GetMatchedButton";
+import Link from "next/link";
 
-const ChoosePersonalLoan = ({ GetMatchedButton, Link }) => {
+const ChoosePersonalLoan = () => {
   // const [expanded, setExpanded] = React.useState("panel1");
 
   // const handleChange = (panel) => (event, newExpanded) => {

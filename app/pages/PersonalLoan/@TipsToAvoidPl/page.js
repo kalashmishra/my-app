@@ -13,7 +13,9 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import avoid_loan from "../../../../public/assets/images/avoid_loan.webp"
 import Image from "next/image";
-const TipsToAvoidPl = ({  GetMatchedButton, Link }) => {
+import Link from "next/link";
+import GetMatchedButton from "@/app/components/GetMatchedButton";
+const TipsToAvoidPl = () => {
   const [expanded, setExpanded] = React.useState("panel1");
 
   const handleChange = (panel) => (event, newExpanded) => {

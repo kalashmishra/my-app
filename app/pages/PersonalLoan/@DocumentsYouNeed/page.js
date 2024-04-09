@@ -1,3 +1,4 @@
+import GetMatchedButton from "@/app/components/GetMatchedButton";
 import { FiberManualRecord } from "@mui/icons-material";
 import {
   Box,
@@ -7,9 +8,10 @@ import {
   ListItem,
   Typography,
 } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 
-const DocumentsYouNeed = ({  GetMatchedButton, Link }) => {
+const DocumentsYouNeed = () => {
   const CircleIcon = {
     color: "#F7D64A",
     fontSize: "10px",
