@@ -9,7 +9,7 @@ import businessLoan from "../../../public/assets/images/business-loan.svg";
 import debtConsolidation from "../../../public/assets/images/debt-consolidation.svg";
 import health from "../../../public/assets/images/health.svg";
 import GetMatchedButton from "@/app/lib/GetMatchedButton/page";
-const ShortTerm = ({ scrollToTop }) => {
+const ShortTerm = () => {
   const linkData = [
     {
       href: "/personal-loan",
@@ -123,7 +123,7 @@ const ShortTerm = ({ scrollToTop }) => {
                         display: "inline-block",
                         textDecoration: "none",
                       }}
-                      onClick={() => scrollToTop()}
+                     
                     >
                       <Box
                         sx={{
