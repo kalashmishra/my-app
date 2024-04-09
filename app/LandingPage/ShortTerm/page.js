@@ -98,7 +98,7 @@ const ShortTerm = () => {
                   On a mission of financial inclusion for every indian
                 </Typography>
               </Box>
-              <Box
+              {/* <Box
                 sx={{
                   display: "flex",
                   marginBottom: "20px",
@@ -172,7 +172,7 @@ const ShortTerm = () => {
                     </Link>
                   </Box>
                 ))}
-              </Box>
+              </Box> */}
               <Box
                 sx={{
                   display: "flex",
