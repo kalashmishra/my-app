@@ -1,8 +1,8 @@
 import heading from "../public/headings.json";
 import Script from "next/script";
 import { Partytown } from '@builder.io/partytown/react';
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header/page";
+import Footer from "./components/Footer/page";
 
 
 export const viewport = {
@@ -25,7 +25,6 @@ export const metadata = {
   manifest: "/manifest.json",
 };
 export default function RootLayout({ children }) {
- 
   return (
     <html lang="en">
       <body>

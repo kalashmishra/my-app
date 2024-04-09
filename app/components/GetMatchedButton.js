@@ -1,10 +1,14 @@
+"use client"
 import { Button } from "@mui/material";
 import React from "react";
+import { scrollToTop } from "../lib/constants";
+
 
 const GetMatchedButton = ({ backCol, Col }) => {
   return (
     <>
       <Button
+      onClick={scrollToTop}
         sx={{
           "&:hover": {
             backgroundColor: backCol ? backCol : "#243771",

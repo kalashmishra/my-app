@@ -1,6 +1,6 @@
 "use client"
 import { useEffect } from "react";
-import LandingPage from "./LandingPage/page";
+import LandingPage from "./pages/LandingPage/page";
 
 export default function Home() {
   useEffect(() => {
