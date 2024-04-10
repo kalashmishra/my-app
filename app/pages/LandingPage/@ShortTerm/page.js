@@ -138,9 +138,9 @@ const ShortTerm = () => {
                           flexDirection: "column",
                           justifyContent: "space-around",
                           margin: "4px",
-                          height: { xs: "88px", md: "100px" },
+                          height: { xs: "88px", sm: "80px", md:'90px' },
                           padding: { xs: "8px", sm: "4px" },
-                          width: { xs: "70px", sm: "100px" },
+                          width: { xs: "60px", sm: "80px", md:'90px' },
                         }}
                       >
                         <Box
