@@ -30,7 +30,7 @@ const PersonalLoanFees = () => {
         <Container maxWidth={"xl"} sx={{ padding: "40px 0px 50px" }}>
           <Grid
             container
-            bgcolor="#FCEFB8"
+           
             spacing={2}
             sx={{ padding: { xs: "16px", sm: "32px" } }}
           >
