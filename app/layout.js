@@ -1,8 +1,9 @@
 import heading from "../public/headings.json";
 import Script from "next/script";
 import { Partytown } from '@builder.io/partytown/react';
-import Header from "./components/Header/page";
-import Footer from "./components/Footer/page";
+import Header from "./components/header";
+import Footer from "./components/footer";
+
 
 
 export const viewport = {
