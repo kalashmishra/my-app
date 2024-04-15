@@ -162,7 +162,7 @@ function Footer() {
                   </Typography>
                   <List sx={{ paddingTop: "16px" }}>
                     <ListItem sx={{ ...listItemStyling }}>
-                      <Link href="/about-us">About Us</Link>
+                      <Link href="/pages/AboutUs">About Us</Link>
                     </ListItem>
                     <ListItem sx={{ ...listItemStyling }}>
                       <Link href="/terms-and-conditions">
@@ -170,7 +170,7 @@ function Footer() {
                       </Link>
                     </ListItem>
                     <ListItem sx={{ ...listItemStyling }}>
-                      <Link href="/privacy-policy">Privacy Policy</Link>
+                      <Link href="/pages/PrivacyPolicy">Privacy Policy</Link>
                     </ListItem>
                     <ListItem sx={{ ...listItemStyling }}>
                       <Link target="_blank" href="https://credmudra.com/blog/">

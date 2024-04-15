@@ -24,7 +24,7 @@ const ShortTerm = () => {
       label: "Business Loan",
     },
     {
-      href: "/debt-consolidation",
+      href: "/pages/DebtConsolidation",
       imageSrc: debtConsolidation,
       label: "Debt Consolidation",
     },
@@ -138,9 +138,9 @@ const ShortTerm = () => {
                           flexDirection: "column",
                           justifyContent: "space-around",
                           margin: "4px",
-                          height: { xs: "88px", sm: "80px", md:'90px' },
+                          height: { xs: "65px",  sm: "80px", md:'90px'},
                           padding: { xs: "8px", sm: "4px" },
-                          width: { xs: "60px", sm: "80px", md:'90px' },
+                          width: { xs: "55px",  sm: "80px", md:'90px' },
                         }}
                       >
                         <Box
