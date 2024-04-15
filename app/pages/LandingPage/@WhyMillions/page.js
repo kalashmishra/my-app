@@ -20,7 +20,8 @@ const WhyMillions = () => {
               opacity: 1,
               textAlign: "center",
               textTransform: "capitalize",
-              width: "70%",
+              width: {xs:'100%',sm:'70%'},
+              lineHeight:{xs:'1.2'}
             }}
           >
             Why Millions Of Indians Trust Credmudra For Short Term Loans?

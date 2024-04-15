@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const PlHomePage = () => {
   return (
-    <Box>
+    <>
       <Grid
         container
         sx={{
@@ -14,12 +14,12 @@ const PlHomePage = () => {
             xs: " 50px 20px",
             sm: "50px 32px",
             md: "50px 32px",
-            lg: "10px 32px",
+            lg: "40px 32px",
           },
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          marginTop:{xs:"40px",sm:'0px'}
+          marginTop:{xs:"40px",sm:'40px',xl:'40px'}
         }}
       >
         <Grid
@@ -39,7 +39,7 @@ const PlHomePage = () => {
               textAlign: { xs: "center", sm: "left" },
             }}
           >
-            <Box>
+           
               <Typography
                 gutterBottom
                 sx={{
@@ -65,7 +65,7 @@ const PlHomePage = () => {
                 So why wait ? Make your move and take that first step towards
                 your aspirations.
               </Typography>
-            </Box>
+           
             <Box sx={{ width: { sm: "90%", md: "100%" } }}>
               <Typography
                 sx={{
@@ -85,9 +85,9 @@ const PlHomePage = () => {
             <Box
               sx={{
                 display: { xs: "none", sm: "flex", md: "flex", xl: "flex" },
-                justifyContent: "center",
-                alignItems: "center",
-                flexDirection: "column",
+                justifyContent: "flex-end",
+               
+               
               }}
             >
               <Image
@@ -96,7 +96,7 @@ const PlHomePage = () => {
                   personal_loan_banner
                 }
                 style={{
-                  width: "100%",
+                  width: "90%",
                   height: "auto",
                 }}
                 alt="get personal loan with highest disbursal rate"
@@ -105,7 +105,7 @@ const PlHomePage = () => {
           </Hidden>
         </Grid>
       </Grid>
-    </Box>
+    </>
   );
 };
 

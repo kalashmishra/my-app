@@ -68,7 +68,7 @@ const TransformYourFinancial = () => {
                       color: "#fff",
                       fontSize: "18px",
                       fontWeight: "900",
-                      margin: "0px 0px 8px",
+                      margin: "30px 0px 8px",
                     }}
                   >
                     Mudra Mentors+
@@ -76,7 +76,7 @@ const TransformYourFinancial = () => {
                   <Typography
                     sx={{
                       color: "#fff",
-                      fontSize: "18px",
+                      fontSize: "14px",
                       margin: "0px 0px 8px",
                       width: "65%",
                     }}
@@ -95,6 +95,7 @@ const TransformYourFinancial = () => {
                     right: "15px",
                     top: "10px",
                     width: "66px",
+                    height:'66px'
                   }}
                 />
               </Card>
@@ -119,7 +120,7 @@ const TransformYourFinancial = () => {
                       color: "#fff",
                       fontSize: "18px",
                       fontWeight: "900",
-                      margin: "0px 0px 8px",
+                      margin: "30px 0px 8px",
                     }}
                   >
                     Resources
@@ -127,7 +128,7 @@ const TransformYourFinancial = () => {
                   <Typography
                     sx={{
                       color: "#fff",
-                      fontSize: "18px",
+                      fontSize: "14px",
                       margin: "0px 0px 8px",
                       width: "65%",
                     }}
@@ -146,6 +147,7 @@ const TransformYourFinancial = () => {
                     right: "15px",
                     top: "10px",
                     width: "66px",
+                    height:'66px'
                   }}
                 />
               </Card>
@@ -170,7 +172,7 @@ const TransformYourFinancial = () => {
                       color: "#fff",
                       fontSize: "18px",
                       fontWeight: "900",
-                      margin: "0px 0px 8px",
+                      margin: "30px 0px 8px",
                     }}
                   >
                     Seek Solutions?
@@ -178,7 +180,7 @@ const TransformYourFinancial = () => {
                   <Typography
                     sx={{
                       color: "#fff",
-                      fontSize: "18px",
+                      fontSize: "14px",
                       margin: "0px 0px 8px",
                       width: "65%",
                     }}
@@ -197,6 +199,7 @@ const TransformYourFinancial = () => {
                     right: "15px",
                     top: "10px",
                     width: "66px",
+                    height:'66px'
                   }}
                 />
               </Card>

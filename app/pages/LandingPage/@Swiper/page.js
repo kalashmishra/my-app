@@ -159,13 +159,13 @@ const SwiperComponent = () => {
             }}
           >
             <Box
-              className="swiper-scrollbar "
+              className="swiper-scrollbar " bgcolor="#243771"
               sx={{
                 position: "initial",
                 margin: "10px 0",
                 width: "-webkit-fill-available",
                 height: "7px",
-                background: "#243771",
+                // background: "#243771",
               }}
             ></Box>
             <Box sx={{ display: "flex" }}>

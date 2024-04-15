@@ -110,12 +110,12 @@ const DocumentsYouNeed = () => {
                       fontWeight: "400",
                     }}
                   >
-                    <Typography
-                      component={"span"}
+                    <span
+                      
                       sx={{ ...TypographySubHeadings }}
                     >
                       Identity Proof:
-                    </Typography>{" "}
+                    </span>{" "}
                     Voter ID Card, Passport, Driving License, Aadhaar Card, PAN
                     Card, etc.
                   </Typography>
@@ -129,13 +129,13 @@ const DocumentsYouNeed = () => {
                       fontWeight: "400",
                     }}
                   >
-                    <Typography
-                      component={"span"}
+                    <span
+                     
                       sx={{ ...TypographySubHeadings }}
                     >
                       {" "}
                       Residential Proof:
-                    </Typography>
+                    </span>
                     Voter ID Card, Utility Bills (Electricity and Water Bill),
                     etc.
                   </Typography>
@@ -149,12 +149,12 @@ const DocumentsYouNeed = () => {
                       fontWeight: "400",
                     }}
                   >
-                    <Typography
-                      component={"span"}
+                    <span
+                     
                       sx={{ ...TypographySubHeadings }}
                     >
                       Income Proof:
-                    </Typography>
+                    </span>
                     Salary Slip (for salaried individuals), Audited financial
                     record (for self-employed individuals), bank account
                     statement.

@@ -91,7 +91,7 @@ const SimpleCriteria = () => {
                     padding: 0,
                     marginBottom: "15px",
                   }}
-                  components={"span"}
+                  
                 >
                   <FiberManualRecord sx={{ ...CircleIcon }} />
                   <Typography
@@ -114,7 +114,7 @@ const SimpleCriteria = () => {
                     padding: 0,
                     marginBottom: "15px",
                   }}
-                  components={"span"}
+                 
                 >
                   <FiberManualRecord sx={{ ...CircleIcon }} />
                   <Typography
@@ -137,7 +137,7 @@ const SimpleCriteria = () => {
                     padding: 0,
                     marginBottom: "15px",
                   }}
-                  components={"span"}
+                
                 >
                   <FiberManualRecord sx={{ ...CircleIcon }} />
                   <Typography
@@ -160,7 +160,7 @@ const SimpleCriteria = () => {
                     padding: 0,
                     marginBottom: "15px",
                   }}
-                  components={"span"}
+                
                 >
                   <FiberManualRecord sx={{ ...CircleIcon }} />
                   <Typography
