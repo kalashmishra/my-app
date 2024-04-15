@@ -8,13 +8,13 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import plf_1 from "../../../../public/assets/images/plf_1.webp"
-import plf_2 from "../../../../public/assets/images/plf_2.webp"
-import plf_3 from "../../../../public/assets/images/plf_3.webp"
-import plf_4 from "../../../../public/assets/images/plf_4.webp"
-import plf_5 from "../../../../public/assets/images/plf_5.webp"
 import Image from "next/image";
-const StepByStep = () => {
+import plf_1 from "@/public/assets/images/plf_1.webp"
+import plf_2 from "@/public/assets/images/plf_2.webp"
+import plf_3 from "@/public/assets/images/plf_3.webp"
+import plf_4 from "@/public/assets/images/plf_4.webp"
+import plf_5 from "@/public/assets/images/plf_5.webp"
+const StepByStepProcess = ({text}) => {
   const CardData = [
     {
       step: "STEP 1",
@@ -22,7 +22,7 @@ const StepByStep = () => {
       label: "enter your mobile and get otp",
       description:
         "You will first need to enter your mobile number and verify it by providing the OTP received on it.",
-      image:plf_1,
+      image: plf_1,
       align: "right",
     },
     {
@@ -37,10 +37,10 @@ const StepByStep = () => {
     {
       step: "STEP 3",
       title: "Declare Employment Details",
-      label: "Declare Employement detail",
+      label: "give employement detail",
       description:
         "Select the type of your employment and enter other relevant information regarding your profession.",
-      image:plf_3,
+      image: plf_3,
       align: "left",
     },
     {
@@ -49,7 +49,7 @@ const StepByStep = () => {
       label: "Enter Personal, Income, Residential And Other Details",
       description:
         "Give necessary inputs like gross annual income, savings account details, name, date of birth, present address, etc. Disclose your present debt obligations.",
-      image:plf_4,
+      image: plf_4,
       align: "center",
     },
     {
@@ -58,49 +58,46 @@ const StepByStep = () => {
       label: "Submit loan request",
       description:
         "Click the ‘Submit’ button after putting the tick mark on the declaration box.",
-      image:plf_5,
+      image: plf_5,
       align: "center",
     },
   ];
 
   return (
     <Box>
-      <Container maxWidth={"lg"}>
-        <Grid container sx={{ padding: "40px 10px 0px" }}>
+      <Container maxWidth={"xl"} sx={{ padding: "0px 0px 0px" }}>
+        <Grid container sx={{ padding: { xs: "0px 20px", sm: "48px" } }}>
           <Grid item sm={12}>
-            <Box>
-              <Box
+            <Box
+              sx={{
+                textAlign: "center",
+              }}
+            >
+              <Typography
                 sx={{
+                  lineHeight: { xs: "1.1", md: "1.5" },
+                  marginBottom: "25px",
+                  fontSize: { xs: "24px", sm: "30px", md: "40px" },
+                  color: "#243771",
+                  fontWeight: "900",
                   textAlign: "center",
+                  margin: { sm: "0px 0px 28px", md: "0px 100px 28px" },
                 }}
               >
-                <Typography
-                  sx={{
-                    lineHeight: { xs: "1.1", md: "1.5" },
-                    marginBottom: "25px",
-                    fontSize: { xs: "24px", sm: "30px", md: "40px" },
-                    color: "#243771",
-                    fontWeight: "900",
-                    textAlign: "center",
-                    margin: { sm: "0px 0px 28px", md: "0px 100px 28px" },
-                  }}
-                >
-                  Step-By-Step Process To Apply For Personal Loan
-                </Typography>
-                <Typography
-                  sx={{
-                    lineHeight: { xs: "1.1", sm: "1.5" },
-                    marginBottom: "25px",
-                    fontSize: { xs: "16px", sm: "20px" },
-                    color: "#243771",
-                    fontWeight: "500",
-                    margin: { sm: "0px 0px 100px", md: "0px 28px 100px" },
-                  }}
-                >
-                  Here is the stepwise process you need to follow to apply for a
-                  personal loan online through Credmudra:
-                </Typography>
-              </Box>
+                Step-By-Step Process To Apply For {text} Loan
+              </Typography>
+              <Typography
+                sx={{
+                  lineHeight: { xs: "1.1", sm: "1.5" },
+                  marginBottom: "25px",
+                  fontSize: { xs: "16px", sm: "20px" },
+                  color: "#243771",
+                  margin: { sm: "0px 0px 100px", md: "0px 40px 100px" },
+                }}
+              >
+                Here is the stepwise process you need to follow to apply for a
+                Debt Consolidation loan online through Credmudra:
+              </Typography>
             </Box>
           </Grid>
         </Grid>
@@ -110,7 +107,8 @@ const StepByStep = () => {
           spacing={2}
         >
           {CardData.map((step, index) => (
-            <Grid  key={index}
+            <Grid
+            key={index}
               item
               xs={12}
               sm={6}
@@ -193,4 +191,4 @@ const StepByStep = () => {
   );
 };
 
-export default StepByStep;
+export default StepByStepProcess;

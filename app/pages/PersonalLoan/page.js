@@ -8,7 +8,7 @@ import WhyIsPlBetter from "./@WhyIsPlBetter/page";
 import SimpleCriteria from "./@SimpleCriteria/page";
 import DocumentsYouNeed from "./@DocumentsYouNeed/page";
 import PersonalLoanFees from "./@PersonalLoanFees/page";
-import StepByStep from "./@StepByStep/page";
+
 import WhenShouldYouAvoid from "./@WhenShouldYouAvoid/page";
 import WhenShouldYouTake from "./@WhenShouldYouTake/page";
 import TipsToAvoidPl from "./@TipsToAvoidPl/page";
@@ -16,6 +16,7 @@ import HowWillLenders from "./@HowWillLenders/page";
 import TipsToGrab from "./@TipsToGrab/page";
 import FAQS from "./@FAQS/page";
 import TransformYourFinancial from "./@TransformYourFinancial/page";
+import StepByStepProcess from "@/app/components/@StepByStepProcess/page";
 
 
 
@@ -41,7 +42,7 @@ const PersonalLoan = () => {
       <SimpleCriteria />
       <DocumentsYouNeed/>
       <PersonalLoanFees />
-      <StepByStep />
+      <StepByStepProcess text={"Personal"}/>
       <WhenShouldYouAvoid />
       <WhenShouldYouTake />
       <TipsToAvoidPl />
